@@ -31,12 +31,13 @@ STEP 5:
 
 STEP 6:
   For the input to reset correctly, it needs to "drink" its value from state!
-  We need to add an extra prop to the <input /> element like so: value={inputValue}  *********(DONE)
+  We need to add an extra prop to the <input /> element like so: value={inputValue} 
 */
 
 
 /* STEP 0 */
 import React, { useState } from 'react'; 
+
 export default function Input() {
   /* STEP 1 */
     const [inputValue, setInputValue] = useState ("");
@@ -63,7 +64,7 @@ export default function Input() {
       <h2>Input</h2>
       <div style={style}>{inputValue}</div> {/* STEP 3 */}
       <div>
-        <input type='text' onChange={changeInput} value={inputValue}/> {/* STEP 6 */}
+        <input type='text' onChange={changeInput} value={inputValue} /> {/* STEP 6 */}
         <button onClick={reset}>Reset</button>
       </div>
     </div>

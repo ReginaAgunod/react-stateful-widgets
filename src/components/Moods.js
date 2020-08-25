@@ -11,21 +11,21 @@ Some might say 3 different states: one per mood (happy, sad, and uncertain).
 But a single slice of state is more than enough to keep track of all these moods!
 
 STEP 0:
-  Study the component below, and import the state hook.
+  Study the component below, and import the state hook.   *********(DONE)
 
 STEP 1:
   Create a 'mood', 'setMood' pair using the state hook.
   The 'mood' slice of state should be initialized to one of the three variables right below our imports.
-  Those variables exist so we don't need to write those long strings anywhere inside the component.
+  Those variables exist so we don't need to write those long strings anywhere inside the component.   *********(DONE)
 
 STEP 2:
-  Make the color of the text be royalblue if the state of the mood is happy, crimson otherwise.
+  Make the color of the text be royalblue if the state of the mood is happy, crimson otherwise.    *********(DONE)
 
 STEP 3:
-  Remove the hard-coded mood and interpolate the 'mood' slice of state instead, using curly brackets.
+  Remove the hard-coded mood and interpolate the 'mood' slice of state instead, using curly brackets.   *********(DONE)
 
 STEPS 4, 5, 6:
-  Inside these click handlers set the correct mood, using 'setMood' and the variables below the imports.
+  Inside these click handlers set the correct mood, using 'setMood' and the variables below the imports.   *********(DONE) *********(DONE) *********(DONE)
 */
 
 import React, { useState } from 'react'; /* STEP 0 */
@@ -53,7 +53,7 @@ export default function Moods() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: (mood === happyMood) ? 'royalblue': 'crimson', /* STEP 2 */
+    color: (mood === happyMood) ? 'royalblue': 'crimson' /* STEP 2 */
   };
 
   return (
